@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFF093622C6A51EE00AC1159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093612C6A51EE00AC1159 /* AppDelegate.swift */; };
+		EFF093642C6A51EE00AC1159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093632C6A51EE00AC1159 /* SceneDelegate.swift */; };
+		EFF093662C6A51EE00AC1159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093652C6A51EE00AC1159 /* ViewController.swift */; };
+		EFF093692C6A51EE00AC1159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF093672C6A51EE00AC1159 /* Main.storyboard */; };
+		EFF0936B2C6A51EF00AC1159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF0936A2C6A51EF00AC1159 /* Assets.xcassets */; };
+		EFF0936E2C6A51EF00AC1159 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF0936C2C6A51EF00AC1159 /* LaunchScreen.storyboard */; };
+		EFF093792C6A51EF00AC1159 /* GoalTracker_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093782C6A51EF00AC1159 /* GoalTracker_iOSTests.swift */; };
+		EFF093832C6A51EF00AC1159 /* GoalTracker_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093822C6A51EF00AC1159 /* GoalTracker_iOSUITests.swift */; };
+		EFF093852C6A51EF00AC1159 /* GoalTracker_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093842C6A51EF00AC1159 /* GoalTracker_iOSUITestsLaunchTests.swift */; };
+		EFF093932C6A539B00AC1159 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EFF093922C6A539B00AC1159 /* FirebaseAuth */; };
+		EFF093952C6A539B00AC1159 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EFF093942C6A539B00AC1159 /* FirebaseDatabase */; };
+		EFF093972C6A53A700AC1159 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF093962C6A53A700AC1159 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFF093752C6A51EF00AC1159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFF093562C6A51EE00AC1159 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFF0935D2C6A51EE00AC1159;
+			remoteInfo = "GoalTracker-iOS";
+		};
+		EFF0937F2C6A51EF00AC1159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFF093562C6A51EE00AC1159 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFF0935D2C6A51EE00AC1159;
+			remoteInfo = "GoalTracker-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFF0935E2C6A51EE00AC1159 /* GoalTracker-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoalTracker-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF093612C6A51EE00AC1159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFF093632C6A51EE00AC1159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFF093652C6A51EE00AC1159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFF093682C6A51EE00AC1159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFF0936A2C6A51EF00AC1159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFF0936D2C6A51EF00AC1159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFF0936F2C6A51EF00AC1159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF093742C6A51EF00AC1159 /* GoalTracker-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GoalTracker-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF093782C6A51EF00AC1159 /* GoalTracker_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTracker_iOSTests.swift; sourceTree = "<group>"; };
+		EFF0937E2C6A51EF00AC1159 /* GoalTracker-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GoalTracker-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF093822C6A51EF00AC1159 /* GoalTracker_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTracker_iOSUITests.swift; sourceTree = "<group>"; };
+		EFF093842C6A51EF00AC1159 /* GoalTracker_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTracker_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFF093962C6A53A700AC1159 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFF0935B2C6A51EE00AC1159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF093952C6A539B00AC1159 /* FirebaseDatabase in Frameworks */,
+				EFF093932C6A539B00AC1159 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF093712C6A51EF00AC1159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF0937B2C6A51EF00AC1159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFF093552C6A51EE00AC1159 = {
+			isa = PBXGroup;
+			children = (
+				EFF093602C6A51EE00AC1159 /* GoalTracker-iOS */,
+				EFF093772C6A51EF00AC1159 /* GoalTracker-iOSTests */,
+				EFF093812C6A51EF00AC1159 /* GoalTracker-iOSUITests */,
+				EFF0935F2C6A51EE00AC1159 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFF0935F2C6A51EE00AC1159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFF0935E2C6A51EE00AC1159 /* GoalTracker-iOS.app */,
+				EFF093742C6A51EF00AC1159 /* GoalTracker-iOSTests.xctest */,
+				EFF0937E2C6A51EF00AC1159 /* GoalTracker-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFF093602C6A51EE00AC1159 /* GoalTracker-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EFF093962C6A53A700AC1159 /* GoogleService-Info.plist */,
+				EFF093612C6A51EE00AC1159 /* AppDelegate.swift */,
+				EFF093632C6A51EE00AC1159 /* SceneDelegate.swift */,
+				EFF093652C6A51EE00AC1159 /* ViewController.swift */,
+				EFF093672C6A51EE00AC1159 /* Main.storyboard */,
+				EFF0936A2C6A51EF00AC1159 /* Assets.xcassets */,
+				EFF0936C2C6A51EF00AC1159 /* LaunchScreen.storyboard */,
+				EFF0936F2C6A51EF00AC1159 /* Info.plist */,
+			);
+			path = "GoalTracker-iOS";
+			sourceTree = "<group>";
+		};
+		EFF093772C6A51EF00AC1159 /* GoalTracker-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFF093782C6A51EF00AC1159 /* GoalTracker_iOSTests.swift */,
+			);
+			path = "GoalTracker-iOSTests";
+			sourceTree = "<group>";
+		};
+		EFF093812C6A51EF00AC1159 /* GoalTracker-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFF093822C6A51EF00AC1159 /* GoalTracker_iOSUITests.swift */,
+				EFF093842C6A51EF00AC1159 /* GoalTracker_iOSUITestsLaunchTests.swift */,
+			);
+			path = "GoalTracker-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFF0935D2C6A51EE00AC1159 /* GoalTracker-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF093882C6A51EF00AC1159 /* Build configuration list for PBXNativeTarget "GoalTracker-iOS" */;
+			buildPhases = (
+				EFF0935A2C6A51EE00AC1159 /* Sources */,
+				EFF0935B2C6A51EE00AC1159 /* Frameworks */,
+				EFF0935C2C6A51EE00AC1159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GoalTracker-iOS";
+			packageProductDependencies = (
+				EFF093922C6A539B00AC1159 /* FirebaseAuth */,
+				EFF093942C6A539B00AC1159 /* FirebaseDatabase */,
+			);
+			productName = "GoalTracker-iOS";
+			productReference = EFF0935E2C6A51EE00AC1159 /* GoalTracker-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFF093732C6A51EF00AC1159 /* GoalTracker-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF0938B2C6A51EF00AC1159 /* Build configuration list for PBXNativeTarget "GoalTracker-iOSTests" */;
+			buildPhases = (
+				EFF093702C6A51EF00AC1159 /* Sources */,
+				EFF093712C6A51EF00AC1159 /* Frameworks */,
+				EFF093722C6A51EF00AC1159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFF093762C6A51EF00AC1159 /* PBXTargetDependency */,
+			);
+			name = "GoalTracker-iOSTests";
+			productName = "GoalTracker-iOSTests";
+			productReference = EFF093742C6A51EF00AC1159 /* GoalTracker-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFF0937D2C6A51EF00AC1159 /* GoalTracker-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF0938E2C6A51EF00AC1159 /* Build configuration list for PBXNativeTarget "GoalTracker-iOSUITests" */;
+			buildPhases = (
+				EFF0937A2C6A51EF00AC1159 /* Sources */,
+				EFF0937B2C6A51EF00AC1159 /* Frameworks */,
+				EFF0937C2C6A51EF00AC1159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFF093802C6A51EF00AC1159 /* PBXTargetDependency */,
+			);
+			name = "GoalTracker-iOSUITests";
+			productName = "GoalTracker-iOSUITests";
+			productReference = EFF0937E2C6A51EF00AC1159 /* GoalTracker-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFF093562C6A51EE00AC1159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EFF0935D2C6A51EE00AC1159 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					EFF093732C6A51EF00AC1159 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EFF0935D2C6A51EE00AC1159;
+					};
+					EFF0937D2C6A51EF00AC1159 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = EFF0935D2C6A51EE00AC1159;
+					};
+				};
+			};
+			buildConfigurationList = EFF093592C6A51EE00AC1159 /* Build configuration list for PBXProject "GoalTracker-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFF093552C6A51EE00AC1159;
+			packageReferences = (
+				EFF093912C6A539B00AC1159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = EFF0935F2C6A51EE00AC1159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFF0935D2C6A51EE00AC1159 /* GoalTracker-iOS */,
+				EFF093732C6A51EF00AC1159 /* GoalTracker-iOSTests */,
+				EFF0937D2C6A51EF00AC1159 /* GoalTracker-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFF0935C2C6A51EE00AC1159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF0936E2C6A51EF00AC1159 /* LaunchScreen.storyboard in Resources */,
+				EFF093972C6A53A700AC1159 /* GoogleService-Info.plist in Resources */,
+				EFF0936B2C6A51EF00AC1159 /* Assets.xcassets in Resources */,
+				EFF093692C6A51EE00AC1159 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF093722C6A51EF00AC1159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF0937C2C6A51EF00AC1159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFF0935A2C6A51EE00AC1159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF093662C6A51EE00AC1159 /* ViewController.swift in Sources */,
+				EFF093622C6A51EE00AC1159 /* AppDelegate.swift in Sources */,
+				EFF093642C6A51EE00AC1159 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF093702C6A51EF00AC1159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF093792C6A51EF00AC1159 /* GoalTracker_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFF0937A2C6A51EF00AC1159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF093852C6A51EF00AC1159 /* GoalTracker_iOSUITestsLaunchTests.swift in Sources */,
+				EFF093832C6A51EF00AC1159 /* GoalTracker_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFF093762C6A51EF00AC1159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFF0935D2C6A51EE00AC1159 /* GoalTracker-iOS */;
+			targetProxy = EFF093752C6A51EF00AC1159 /* PBXContainerItemProxy */;
+		};
+		EFF093802C6A51EF00AC1159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFF0935D2C6A51EE00AC1159 /* GoalTracker-iOS */;
+			targetProxy = EFF0937F2C6A51EF00AC1159 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFF093672C6A51EE00AC1159 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFF093682C6A51EE00AC1159 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFF0936C2C6A51EF00AC1159 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFF0936D2C6A51EF00AC1159 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFF093862C6A51EF00AC1159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFF093872C6A51EF00AC1159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFF093892C6A51EF00AC1159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoalTracker-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team.GoalTracker-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFF0938A2C6A51EF00AC1159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GoalTracker-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team.GoalTracker-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFF0938C2C6A51EF00AC1159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team.GoalTracker-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoalTracker-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoalTracker-iOS";
+			};
+			name = Debug;
+		};
+		EFF0938D2C6A51EF00AC1159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team.GoalTracker-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoalTracker-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoalTracker-iOS";
+			};
+			name = Release;
+		};
+		EFF0938F2C6A51EF00AC1159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team.GoalTracker-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GoalTracker-iOS";
+			};
+			name = Debug;
+		};
+		EFF093902C6A51EF00AC1159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.team.GoalTracker-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GoalTracker-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFF093592C6A51EE00AC1159 /* Build configuration list for PBXProject "GoalTracker-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF093862C6A51EF00AC1159 /* Debug */,
+				EFF093872C6A51EF00AC1159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF093882C6A51EF00AC1159 /* Build configuration list for PBXNativeTarget "GoalTracker-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF093892C6A51EF00AC1159 /* Debug */,
+				EFF0938A2C6A51EF00AC1159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF0938B2C6A51EF00AC1159 /* Build configuration list for PBXNativeTarget "GoalTracker-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF0938C2C6A51EF00AC1159 /* Debug */,
+				EFF0938D2C6A51EF00AC1159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF0938E2C6A51EF00AC1159 /* Build configuration list for PBXNativeTarget "GoalTracker-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF0938F2C6A51EF00AC1159 /* Debug */,
+				EFF093902C6A51EF00AC1159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFF093912C6A539B00AC1159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFF093922C6A539B00AC1159 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFF093912C6A539B00AC1159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EFF093942C6A539B00AC1159 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFF093912C6A539B00AC1159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EFF093562C6A51EE00AC1159 /* Project object */;
+}
