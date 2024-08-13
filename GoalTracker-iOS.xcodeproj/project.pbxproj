@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4901FB2C6B568300DCC922 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4901FA2C6B568300DCC922 /* MainController.swift */; };
 		EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9072C6B39B200DC5445 /* LoginController.swift */; };
 		EF5CE90A2C6B3A2000DC5445 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9092C6B3A2000DC5445 /* SignupController.swift */; };
 		EF5CE90C2C6B3F0300DC5445 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE90B2C6B3F0300DC5445 /* Task.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF4901FA2C6B568300DCC922 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		EF5CE9072C6B39B200DC5445 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EF5CE9092C6B3A2000DC5445 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		EF5CE90B2C6B3F0300DC5445 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
@@ -88,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF4901F82C6B549E00DCC922 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
 		EFF093552C6A51EE00AC1159 = {
 			isa = PBXGroup;
 			children = (
@@ -111,17 +120,19 @@
 		EFF093602C6A51EE00AC1159 /* GoalTracker-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EFF093962C6A53A700AC1159 /* GoogleService-Info.plist */,
 				EFF093612C6A51EE00AC1159 /* AppDelegate.swift */,
 				EFF093632C6A51EE00AC1159 /* SceneDelegate.swift */,
 				EF5CE9072C6B39B200DC5445 /* LoginController.swift */,
+				EF4901FA2C6B568300DCC922 /* MainController.swift */,
 				EFF093652C6A51EE00AC1159 /* OpeningController.swift */,
+				EF5CE9092C6B3A2000DC5445 /* SignupController.swift */,
+				EF5CE90B2C6B3F0300DC5445 /* Task.swift */,
+				EF4901F82C6B549E00DCC922 /* Authentication */,
+				EFF093962C6A53A700AC1159 /* GoogleService-Info.plist */,
 				EFF093672C6A51EE00AC1159 /* Main.storyboard */,
 				EFF0936A2C6A51EF00AC1159 /* Assets.xcassets */,
 				EFF0936C2C6A51EF00AC1159 /* LaunchScreen.storyboard */,
 				EFF0936F2C6A51EF00AC1159 /* Info.plist */,
-				EF5CE9092C6B3A2000DC5445 /* SignupController.swift */,
-				EF5CE90B2C6B3F0300DC5445 /* Task.swift */,
 			);
 			path = "GoalTracker-iOS";
 			sourceTree = "<group>";
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF093662C6A51EE00AC1159 /* OpeningController.swift in Sources */,
+				EF4901FB2C6B568300DCC922 /* MainController.swift in Sources */,
 				EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */,
 				EFF093622C6A51EE00AC1159 /* AppDelegate.swift in Sources */,
 				EF5CE90A2C6B3A2000DC5445 /* SignupController.swift in Sources */,

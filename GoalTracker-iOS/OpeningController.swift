@@ -11,5 +11,16 @@ class OpeningController: UIViewController {
     }
 
 
+    @IBAction func loginPressed(_ sender: UIButton) {
+        let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "LoginController") as! LoginController
+        self.navigationController?.pushViewController(storyboard, animated: true)
+    }
+    
+    
+    @IBAction func signupPressed(_ sender: UIButton) {
+        let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "SignUpController") as! SignupController
+        self.navigationController?.pushViewController(storyboard, animated: true)
+    }
+    
 }
 
