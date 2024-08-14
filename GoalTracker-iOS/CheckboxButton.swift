@@ -5,7 +5,7 @@ class CheckboxButton: UIButton {
     // Properties to track the checkbox state
     private var isChecked: Bool = false {
         didSet {
-            updateAppearance()
+            animateAppearance()
         }
     }
     
@@ -36,6 +36,12 @@ class CheckboxButton: UIButton {
             setImage(resizedImage, for: .normal)
             self.imageView?.contentMode = .scaleAspectFit // Ensure image scales correctly
         }
+    }
+    
+    private func animateAppearance() {
+        UIView.transition(with: self, duration: 0.3, options: [.transitionCrossDissolve], animations: {
+            self.updateAppearance()
+        }, completion: nil)
     }
     
     private func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage {
