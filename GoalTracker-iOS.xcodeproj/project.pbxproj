@@ -11,6 +11,7 @@
 		EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9072C6B39B200DC5445 /* LoginController.swift */; };
 		EF5CE90A2C6B3A2000DC5445 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9092C6B3A2000DC5445 /* SignupController.swift */; };
 		EF5CE90C2C6B3F0300DC5445 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE90B2C6B3F0300DC5445 /* Task.swift */; };
+		EFDD249F2C6C8E3D0067FED9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD249E2C6C8E3D0067FED9 /* UIView.swift */; };
 		EFF093622C6A51EE00AC1159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093612C6A51EE00AC1159 /* AppDelegate.swift */; };
 		EFF093642C6A51EE00AC1159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093632C6A51EE00AC1159 /* SceneDelegate.swift */; };
 		EFF093662C6A51EE00AC1159 /* OpeningController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF093652C6A51EE00AC1159 /* OpeningController.swift */; };
@@ -47,6 +48,7 @@
 		EF5CE9072C6B39B200DC5445 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EF5CE9092C6B3A2000DC5445 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		EF5CE90B2C6B3F0300DC5445 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EFDD249E2C6C8E3D0067FED9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		EFF0935E2C6A51EE00AC1159 /* GoalTracker-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoalTracker-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF093612C6A51EE00AC1159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFF093632C6A51EE00AC1159 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				EFF093652C6A51EE00AC1159 /* OpeningController.swift */,
 				EF5CE9092C6B3A2000DC5445 /* SignupController.swift */,
 				EF5CE90B2C6B3F0300DC5445 /* Task.swift */,
+				EFDD249E2C6C8E3D0067FED9 /* UIView.swift */,
 				EF4901F82C6B549E00DCC922 /* Authentication */,
 				EFF093962C6A53A700AC1159 /* GoogleService-Info.plist */,
 				EFF093672C6A51EE00AC1159 /* Main.storyboard */,
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFDD249F2C6C8E3D0067FED9 /* UIView.swift in Sources */,
 				EFF093662C6A51EE00AC1159 /* OpeningController.swift in Sources */,
 				EF4901FB2C6B568300DCC922 /* MainController.swift in Sources */,
 				EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */,

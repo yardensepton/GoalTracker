@@ -189,6 +189,9 @@
                                     <fontDescription key="titleFontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
                                     <color key="baseBackgroundColor" red="0.76862745099999996" green="0.1764705882" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="kWO-Od-crK" eventType="touchUpInside" id="fV7-80-Uxm"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="753" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gQw-ik-eZb">
                                 <rect key="frame" x="35" y="335" width="323" height="34"/>
@@ -215,6 +218,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zYM-y0-arP"/>
+                    <connections>
+                        <outlet property="email_et" destination="2ju-HN-pCY" id="B3P-rj-dky"/>
+                        <outlet property="password_et" destination="gQw-ik-eZb" id="Ayy-Dr-PNV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MrR-OU-N2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,25 +230,36 @@
         <!--Main Controller-->
         <scene sceneID="d4g-t8-WeJ">
             <objects>
-                <viewController storyboardIdentifier="mainController" id="710-z9-FNE" customClass="MainController" customModule="GoalTracker_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainController" id="710-z9-FNE" customClass="MainController" customModule="GoalTracker_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Vr-zZ-A2Q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are signed up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enB-cx-g74">
-                                <rect key="frame" x="128.66666666666666" y="415.66666666666669" width="135.99999999999997" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avx-FX-qjb">
+                                <rect key="frame" x="25" y="109" width="116" height="35"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.1764705882" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ0-w0-4ka">
+                                <rect key="frame" x="25" y="149" width="101" height="26"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Cp-St-dgh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="enB-cx-g74" firstAttribute="centerX" secondItem="6Vr-zZ-A2Q" secondAttribute="centerX" id="SWC-T1-Ccw"/>
-                            <constraint firstItem="enB-cx-g74" firstAttribute="centerY" secondItem="6Vr-zZ-A2Q" secondAttribute="centerY" id="VK0-my-BBJ"/>
+                            <constraint firstItem="Avx-FX-qjb" firstAttribute="leading" secondItem="4Cp-St-dgh" secondAttribute="leading" constant="25" id="J6Z-pK-tDn"/>
+                            <constraint firstItem="IQ0-w0-4ka" firstAttribute="top" secondItem="4Cp-St-dgh" secondAttribute="top" constant="90" id="QwY-L2-BmG"/>
+                            <constraint firstItem="IQ0-w0-4ka" firstAttribute="leading" secondItem="4Cp-St-dgh" secondAttribute="leading" constant="25" id="RIx-Gd-HNQ"/>
+                            <constraint firstItem="Avx-FX-qjb" firstAttribute="top" secondItem="4Cp-St-dgh" secondAttribute="top" constant="50" id="a2B-QC-0cb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="IQ0-w0-4ka" id="abH-bU-bdH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdy-YT-m59" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
