@@ -5,6 +5,7 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var table: UITableView!
     
+    @IBOutlet weak var exitBtn: UIButton!
     var currentUser: User?
     
     var Tasks: [Task] = []
@@ -14,11 +15,12 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        let user = UserManager.shared.getCurrentUser()
+        currentUser = UserManager.shared.currentUser
+        
         
         Tasks = [
-            Task(title: "Android B", description: "Final Task", userID: (user?.email)!, completionDate: "26/08/24"),
-            Task(title: "iOS Programming", description: "Final Task", userID: (user?.email)!, completionDate: "26/08/24")
+            Task(title: "Android B", description: "Final Task", userID: (currentUser!.email)!, completionDate: "26/08/24"),
+            Task(title: "iOS Programming", description: "Final Task", userID: (currentUser!.email)!, completionDate: "26/08/24")
         ]
         table.delegate = self
         table.dataSource = self
@@ -29,6 +31,16 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return Tasks.count
     }
 
+   
+    @IBAction func signOutPress(_ sender: Any) {
+        let res =  UserManager.shared.signOutUser()
+        if res{
+            navigationController?.popToRootViewController(animated: true)
+      
+        }
+        
+        
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandableCell", for: indexPath) as! ExpandableTableViewCell
 

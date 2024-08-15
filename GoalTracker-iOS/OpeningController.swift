@@ -8,6 +8,20 @@ class OpeningController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if UserManager.shared.currentUser != nil{
+            goToMainController()
+        }
+                
+            
+      
+    }
+    
+    func goToMainController(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let mainController = storyboard.instantiateViewController(withIdentifier: "MainController") as? MainController {
+            self.navigationController?.pushViewController(mainController, animated: true)
+        }
     }
 
 
@@ -23,4 +37,3 @@ class OpeningController: UIViewController {
     }
     
 }
-
