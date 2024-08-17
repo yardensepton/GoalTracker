@@ -1,11 +1,15 @@
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class MainController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var table: UITableView!
     
+    @IBOutlet weak var newTaskBTN: UIButton!
+    
     @IBOutlet weak var exitBtn: UIButton!
+    
     var currentUser: User?
     
     var Tasks: [Task] = []
@@ -15,15 +19,19 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true
-        currentUser = UserManager.shared.currentUser
-        
-        
-        Tasks = [
-            Task(title: "Android B", description: "Final Task", userID: (currentUser!.email)!, completionDate: "26/08/24"),
-            Task(title: "iOS Programming", description: "Final Task", userID: (currentUser!.email)!, completionDate: "26/08/24")
-        ]
-        table.delegate = self
         table.dataSource = self
+        table.delegate = self
+    
+        if let currentUser = UserManager.shared.currentUser {
+            print(currentUser.uid)
+            DataManager().getDataFromUid(for: String(currentUser.uid)) { [weak self] fetchedTasks in
+                print("Fetched: \(fetchedTasks)")
+                self?.Tasks = fetchedTasks
+                self?.table.reloadData()
+            }
+        } else {
+            print("No user was logged in")
+        }
     }
 
     // UITableViewDataSource methods
@@ -38,9 +46,8 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
             navigationController?.popToRootViewController(animated: true)
       
         }
-        
-        
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandableCell", for: indexPath) as! ExpandableTableViewCell
 

@@ -11,6 +11,7 @@
 		EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9072C6B39B200DC5445 /* LoginController.swift */; };
 		EF5CE90A2C6B3A2000DC5445 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9092C6B3A2000DC5445 /* SignupController.swift */; };
 		EF5CE90C2C6B3F0300DC5445 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE90B2C6B3F0300DC5445 /* Task.swift */; };
+		EFCCD5F92C709043005D800C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD5F82C709043005D800C /* DataManager.swift */; };
 		EFDD249F2C6C8E3D0067FED9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD249E2C6C8E3D0067FED9 /* UIView.swift */; };
 		EFDD24A32C6CA1DD0067FED9 /* ExpendableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD24A22C6CA1DD0067FED9 /* ExpendableTableViewCell.swift */; };
 		EFDD24A52C6CA7C40067FED9 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD24A42C6CA7C40067FED9 /* CheckboxButton.swift */; };
@@ -51,6 +52,7 @@
 		EF5CE9072C6B39B200DC5445 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EF5CE9092C6B3A2000DC5445 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		EF5CE90B2C6B3F0300DC5445 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EFCCD5F82C709043005D800C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EFDD249E2C6C8E3D0067FED9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		EFDD24A22C6CA1DD0067FED9 /* ExpendableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpendableTableViewCell.swift; sourceTree = "<group>"; };
 		EFDD24A42C6CA7C40067FED9 /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				EFDD24A22C6CA1DD0067FED9 /* ExpendableTableViewCell.swift */,
 				EFDD24A42C6CA7C40067FED9 /* CheckboxButton.swift */,
 				EFDD24A62C6CAE4A0067FED9 /* UserManager.swift */,
+				EFCCD5F82C709043005D800C /* DataManager.swift */,
 			);
 			path = "GoalTracker-iOS";
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDD24A52C6CA7C40067FED9 /* CheckboxButton.swift in Sources */,
+				EFCCD5F92C709043005D800C /* DataManager.swift in Sources */,
 				EFDD249F2C6C8E3D0067FED9 /* UIView.swift in Sources */,
 				EFF093662C6A51EE00AC1159 /* OpeningController.swift in Sources */,
 				EF4901FB2C6B568300DCC922 /* MainController.swift in Sources */,
