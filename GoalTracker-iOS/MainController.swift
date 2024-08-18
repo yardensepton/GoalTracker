@@ -10,8 +10,6 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var exitBtn: UIButton!
     
-    var currentUser: User?
-    
     var Tasks: [Task] = []
     
     var expandedIndexSet: IndexSet = []

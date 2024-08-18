@@ -2,16 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>DATABASE_URL</key>
-	<string>https://goaltracker-7b9f8-default-rtdb.europe-west1.firebasedatabase.app</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDHK2kvBkNV5S3uFD58jbiqv8HCkjFFxSA</string>
-	<key>GCM_SENDER_ID</key>
-	<string>818314882788</string>
-	<key>PLIST_VERSION</key>
-	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.team.GoalTracker-iOS</string>
+	<key>GCM_SENDER_ID</key>
+	<string>818314882788</string>
+	<key>DATABASE_URL</key>
+	<string>https://goaltracker-7b9f8-default-rtdb.europe-west1.firebasedatabase.app</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
 	<key>PROJECT_ID</key>
 	<string>goaltracker-7b9f8</string>
 	<key>STORAGE_BUCKET</key>

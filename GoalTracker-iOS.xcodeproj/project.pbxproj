@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF3ED10D2C722E7F004A002D /* NewTaskControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3ED10C2C722E7F004A002D /* NewTaskControllerViewController.swift */; };
 		EF4901FB2C6B568300DCC922 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4901FA2C6B568300DCC922 /* MainController.swift */; };
 		EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9072C6B39B200DC5445 /* LoginController.swift */; };
 		EF5CE90A2C6B3A2000DC5445 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9092C6B3A2000DC5445 /* SignupController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF3ED10C2C722E7F004A002D /* NewTaskControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskControllerViewController.swift; sourceTree = "<group>"; };
 		EF4901FA2C6B568300DCC922 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		EF5CE9072C6B39B200DC5445 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EF5CE9092C6B3A2000DC5445 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				EFDD24A42C6CA7C40067FED9 /* CheckboxButton.swift */,
 				EFDD24A62C6CAE4A0067FED9 /* UserManager.swift */,
 				EFCCD5F82C709043005D800C /* DataManager.swift */,
+				EF3ED10C2C722E7F004A002D /* NewTaskControllerViewController.swift */,
 			);
 			path = "GoalTracker-iOS";
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				EFDD24A32C6CA1DD0067FED9 /* ExpendableTableViewCell.swift in Sources */,
 				EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */,
 				EFF093622C6A51EE00AC1159 /* AppDelegate.swift in Sources */,
+				EF3ED10D2C722E7F004A002D /* NewTaskControllerViewController.swift in Sources */,
 				EF5CE90A2C6B3A2000DC5445 /* SignupController.swift in Sources */,
 				EF5CE90C2C6B3F0300DC5445 /* Task.swift in Sources */,
 				EFDD24A72C6CAE4A0067FED9 /* UserManager.swift in Sources */,

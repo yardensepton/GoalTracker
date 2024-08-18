@@ -29,8 +29,6 @@ class LoginController: UIViewController {
     func goToMainController(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let mainController = storyboard.instantiateViewController(withIdentifier: "MainController") as? MainController {
-            mainController.currentUser = Auth.auth().currentUser
-            
             self.navigationController?.pushViewController(mainController, animated: true)
         }
     }
