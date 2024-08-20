@@ -1,12 +1,26 @@
 import UIKit
 
+protocol CheckboxButtonDelegate: AnyObject {
+
+    func checkboxButton(_ button: CheckboxButton, didChangeState isChecked: Bool)
+}
+
+
 class CheckboxButton: UIButton {
     
     // Properties to track the checkbox state
-    private var isChecked: Bool = false {
+    public var isChecked: Bool = false {
         didSet {
             animateAppearance()
+            notifyDelegate()
         }
+    }
+    
+    weak var delegate: CheckboxButtonDelegate?
+    
+    private func notifyDelegate() {
+        delegate?.checkboxButton(self, didChangeState: isChecked)
+        print("Notifying delegate with state: \(isChecked)")
     }
     
     // Initialize the button
@@ -23,6 +37,7 @@ class CheckboxButton: UIButton {
     private func setup() {
         self.addTarget(self, action: #selector(toggleCheckbox), for: .touchUpInside)
         updateAppearance()
+        print("CheckboxButton setup complete")
     }
     
     @objc private func toggleCheckbox() {
@@ -30,7 +45,7 @@ class CheckboxButton: UIButton {
     }
     
     private func updateAppearance() {
-        let imageName = isChecked ? "checkbox_checked" : "checkbox_unchecked"
+        let imageName = isChecked ? "checkbox" : "unchecked"
         if let image = UIImage(named: imageName) {
             let resizedImage = resizeImage(image: image, targetSize: CGSize(width: 30, height: 30)) // Adjust target size as needed
             setImage(resizedImage, for: .normal)

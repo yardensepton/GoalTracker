@@ -1,6 +1,10 @@
 import UIKit
 
-class ExpandableTableViewCell: UITableViewCell {
+protocol ExpandableTableViewCellDelegate: AnyObject {
+    func checkboxButton(_ button: CheckboxButton, didChangeState isChecked: Bool, at indexPath: IndexPath)
+}
+
+class ExpandableTableViewCell: UITableViewCell, CheckboxButtonDelegate{
 
     // MARK: - Outlets
     @IBOutlet weak var titleLabel: UILabel!
@@ -8,6 +12,9 @@ class ExpandableTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var completedBTN: CheckboxButton!
+    
+    weak var delegate: ExpandableTableViewCellDelegate?
+    var indexPath: IndexPath?
     
     // MARK: - Properties
     var isExpanded: Bool = false {
@@ -17,12 +24,27 @@ class ExpandableTableViewCell: UITableViewCell {
             }
         }
     }
+    
+    func checkboxButton(_ button: CheckboxButton, didChangeState isChecked: Bool) {
+        print("CheckboxButton delegate method called with state: \(isChecked)")
+        guard let indexPath = indexPath else {
+              print("IndexPath is nil in checkboxButton delegate")
+              return
+          }
+        let isChecked = completedBTN.isChecked
+        print(isChecked)
+        delegate?.checkboxButton(button, didChangeState: isChecked, at: indexPath)
+
+    }
+
+
 
     // MARK: - Initialization
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initial setup
         expandedContentView.isHidden = true // Start with the expanded content hidden
+        completedBTN.delegate = self // Set the delegate to self
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -2,7 +2,9 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class MainController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+
+class MainController: UIViewController, UITableViewDelegate, UITableViewDataSource, ExpandableTableViewCellDelegate {
     
     @IBOutlet weak var table: UITableView!
     
@@ -23,7 +25,6 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if let currentUser = UserManager.shared.currentUser {
             print(currentUser.uid)
             DataManager().getDataFromUid(for: String(currentUser.uid)) { [weak self] fetchedTasks in
-                print("Fetched: \(fetchedTasks)")
                 self?.Tasks = fetchedTasks
                 self?.table.reloadData()
             }
@@ -46,6 +47,20 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandableCell", for: indexPath) as! ExpandableTableViewCell
+//
+//        let task = Tasks[indexPath.row]
+//        cell.titleLabel.text = task.title
+//        cell.descriptionLabel.text = task.description
+//        cell.dateLabel.text = task.completionDate
+//        cell.completedBTN.isChecked = task.isCompleted
+//
+//        cell.isExpanded = expandedIndexSet.contains(indexPath.row)
+//
+//        return cell
+//    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExpandableCell", for: indexPath) as! ExpandableTableViewCell
 
@@ -53,11 +68,18 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.titleLabel.text = task.title
         cell.descriptionLabel.text = task.description
         cell.dateLabel.text = task.completionDate
+        cell.completedBTN.isChecked = task.isCompleted
+
+        cell.indexPath = indexPath // Set the indexPath here
+        cell.delegate = self // Ensure the delegate is set
 
         cell.isExpanded = expandedIndexSet.contains(indexPath.row)
 
         return cell
     }
+
+    
+    
 
     // UITableViewDelegate method for handling expansion
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -76,7 +98,32 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if expandedIndexSet.contains(indexPath.row) {
             return UITableView.automaticDimension // Adjust based on content size
         } else {
-            return 60 // Default height for collapsed state
+            return 70 // Default height for collapsed state
         }
     }
+    
+    
+//    func checkboxButton(_ button: CheckboxButton, didChangeState isChecked: Bool, at indexPath: IndexPath) {
+//        print(isChecked)
+//        // Update your task model based on the checkbox change
+//        Tasks[indexPath.row].isCompleted = isChecked
+//        DataManager().self.updateTaskCompletion(taskID: Tasks[indexPath.row].taskID,isChecked: isChecked)
+//
+//    }
+    
+    // ExpandableTableViewCellDelegate method
+     func checkboxButton(_ button: CheckboxButton, didChangeState isChecked: Bool, at indexPath: IndexPath) {
+         print("Checkbox state changed to \(isChecked) for task at \(indexPath.row)")
+
+         // Update your task model based on the checkbox change
+         Tasks[indexPath.row].isCompleted = isChecked
+
+         // Update the database with the new state
+         let taskID = Tasks[indexPath.row].taskID // Assuming Task has a taskID property
+         print("in main controller \(taskID)")
+         DataManager().updateTaskCompletion(taskID: taskID, isChecked: isChecked)
+         
+         // Optionally, reload the cell to reflect the change
+         table.reloadRows(at: [indexPath], with: .none)
+     }
 }
