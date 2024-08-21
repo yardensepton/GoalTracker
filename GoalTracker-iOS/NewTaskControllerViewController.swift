@@ -23,6 +23,11 @@ class NewTaskControllerViewController: UIViewController {
         let uid : String? = UserManager.shared.currentUser?.uid
         let taskID : String = NSUUID().uuidString
         
+        if(title!.isEmpty || title == nil || desc!.isEmpty || desc == nil){
+            self.showToast(message: "Fill all the fields ")
+            return
+        }
+        
         var task = Task(taskID:taskID,title: title!, description: desc!, userID:uid!, completionDate: date)
         DataManager().self.addNewTask(task: task) { success in
             if success {

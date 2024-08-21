@@ -31,8 +31,6 @@ class ExpandableTableViewCell: UITableViewCell, CheckboxButtonDelegate{
               print("IndexPath is nil in checkboxButton delegate")
               return
           }
-        let isChecked = completedBTN.isChecked
-        print(isChecked)
         delegate?.checkboxButton(button, didChangeState: isChecked, at: indexPath)
 
     }
@@ -47,7 +45,12 @@ class ExpandableTableViewCell: UITableViewCell, CheckboxButtonDelegate{
         completedBTN.delegate = self // Set the delegate to self
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
+    func configure(with task: Task, at indexPath: IndexPath, isExpanded: Bool) {
+            self.indexPath = indexPath
+            titleLabel.text = task.title
+            descriptionLabel.text = task.description
+            dateLabel.text = task.completionDate
+            completedBTN.isChecked = task.isCompleted // Bind checkbox state to model
+            self.isExpanded = isExpanded
+        }
 }

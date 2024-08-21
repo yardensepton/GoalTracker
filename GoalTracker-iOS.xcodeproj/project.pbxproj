@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5E122662C75EC83004A5B0D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C5E122652C75EC83004A5B0D /* Lottie */; };
+		C5E1226A2C76039A004A5B0D /* loading2.json in Resources */ = {isa = PBXBuildFile; fileRef = C5E122692C76039A004A5B0D /* loading2.json */; };
 		EF3ED10D2C722E7F004A002D /* NewTaskControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3ED10C2C722E7F004A002D /* NewTaskControllerViewController.swift */; };
 		EF4901FB2C6B568300DCC922 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4901FA2C6B568300DCC922 /* MainController.swift */; };
 		EF5CE9082C6B39B200DC5445 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5CE9072C6B39B200DC5445 /* LoginController.swift */; };
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5E122692C76039A004A5B0D /* loading2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading2.json; sourceTree = "<group>"; };
 		EF3ED10C2C722E7F004A002D /* NewTaskControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskControllerViewController.swift; sourceTree = "<group>"; };
 		EF4901FA2C6B568300DCC922 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		EF5CE9072C6B39B200DC5445 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 			files = (
 				EFF093952C6A539B00AC1159 /* FirebaseDatabase in Frameworks */,
 				EFF093932C6A539B00AC1159 /* FirebaseAuth in Frameworks */,
+				C5E122662C75EC83004A5B0D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +141,7 @@
 				EF5CE9072C6B39B200DC5445 /* LoginController.swift */,
 				EF4901FA2C6B568300DCC922 /* MainController.swift */,
 				EFF093652C6A51EE00AC1159 /* OpeningController.swift */,
+				C5E122692C76039A004A5B0D /* loading2.json */,
 				EF5CE9092C6B3A2000DC5445 /* SignupController.swift */,
 				EF5CE90B2C6B3F0300DC5445 /* Task.swift */,
 				EFDD249E2C6C8E3D0067FED9 /* UIView.swift */,
@@ -191,6 +196,7 @@
 			packageProductDependencies = (
 				EFF093922C6A539B00AC1159 /* FirebaseAuth */,
 				EFF093942C6A539B00AC1159 /* FirebaseDatabase */,
+				C5E122652C75EC83004A5B0D /* Lottie */,
 			);
 			productName = "GoalTracker-iOS";
 			productReference = EFF0935E2C6A51EE00AC1159 /* GoalTracker-iOS.app */;
@@ -266,6 +272,7 @@
 			mainGroup = EFF093552C6A51EE00AC1159;
 			packageReferences = (
 				EFF093912C6A539B00AC1159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C5E122642C75EC83004A5B0D /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = EFF0935F2C6A51EE00AC1159 /* Products */;
 			projectDirPath = "";
@@ -287,6 +294,7 @@
 				EFF093972C6A53A700AC1159 /* GoogleService-Info.plist in Resources */,
 				EFF0936B2C6A51EF00AC1159 /* Assets.xcassets in Resources */,
 				EFF093692C6A51EE00AC1159 /* Main.storyboard in Resources */,
+				C5E1226A2C76039A004A5B0D /* loading2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +669,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C5E122642C75EC83004A5B0D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		EFF093912C6A539B00AC1159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -672,6 +688,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C5E122652C75EC83004A5B0D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5E122642C75EC83004A5B0D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
 		EFF093922C6A539B00AC1159 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EFF093912C6A539B00AC1159 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

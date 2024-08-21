@@ -337,6 +337,13 @@
                                     <segue destination="v0H-cP-9We" kind="show" id="RlT-eP-emv"/>
                                 </connections>
                             </button>
+                            <view userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="Fjk-qF-Me1" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="76" y="362" width="241" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loading2"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4Cp-St-dgh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -344,20 +351,25 @@
                             <constraint firstItem="h3C-7e-tCN" firstAttribute="top" secondItem="4Cp-St-dgh" secondAttribute="top" id="3pD-qH-P82"/>
                             <constraint firstItem="oxW-aw-8mm" firstAttribute="leading" secondItem="4Cp-St-dgh" secondAttribute="leading" constant="10" id="4d0-p4-IZD"/>
                             <constraint firstItem="4Cp-St-dgh" firstAttribute="trailing" secondItem="65T-Xn-olu" secondAttribute="trailing" constant="45" id="4et-WN-Eg8"/>
+                            <constraint firstItem="Fjk-qF-Me1" firstAttribute="centerY" secondItem="6Vr-zZ-A2Q" secondAttribute="centerY" id="8we-El-WxW"/>
                             <constraint firstItem="jp3-Fg-ekc" firstAttribute="top" secondItem="oxW-aw-8mm" secondAttribute="bottom" constant="15" id="CeG-JD-IFv"/>
+                            <constraint firstItem="Fjk-qF-Me1" firstAttribute="centerX" secondItem="6Vr-zZ-A2Q" secondAttribute="centerX" id="HYa-8g-dzN"/>
                             <constraint firstItem="h3C-7e-tCN" firstAttribute="leading" secondItem="4Cp-St-dgh" secondAttribute="leading" id="IMq-4e-Lwv"/>
                             <constraint firstItem="4Cp-St-dgh" firstAttribute="trailing" secondItem="oxW-aw-8mm" secondAttribute="trailing" constant="10" id="Vjg-vl-4sd"/>
                             <constraint firstItem="65T-Xn-olu" firstAttribute="top" secondItem="oxW-aw-8mm" secondAttribute="bottom" constant="15" id="WJz-DZ-GXC"/>
                             <constraint firstItem="4Cp-St-dgh" firstAttribute="bottom" secondItem="oxW-aw-8mm" secondAttribute="bottom" constant="50" id="WX8-wq-CMW"/>
                             <constraint firstItem="jp3-Fg-ekc" firstAttribute="bottom" secondItem="4Cp-St-dgh" secondAttribute="bottom" constant="10" id="Z2m-0a-o62"/>
                             <constraint firstItem="oxW-aw-8mm" firstAttribute="top" secondItem="h3C-7e-tCN" secondAttribute="bottom" constant="10" id="jsI-qZ-G8U"/>
+                            <constraint firstItem="Fjk-qF-Me1" firstAttribute="top" secondItem="6Vr-zZ-A2Q" secondAttribute="top" constant="362" id="kWH-Ro-K3e"/>
                             <constraint firstItem="jp3-Fg-ekc" firstAttribute="leading" secondItem="4Cp-St-dgh" secondAttribute="leading" constant="45" id="pyS-le-t0m"/>
+                            <constraint firstItem="Fjk-qF-Me1" firstAttribute="leading" secondItem="4Cp-St-dgh" secondAttribute="leading" constant="76" id="vPQ-JB-MIO"/>
                             <constraint firstItem="h3C-7e-tCN" firstAttribute="centerX" secondItem="oxW-aw-8mm" secondAttribute="centerX" id="xKh-8t-YMG"/>
                             <constraint firstItem="65T-Xn-olu" firstAttribute="bottom" secondItem="4Cp-St-dgh" secondAttribute="bottom" constant="10" id="yWh-pO-4IE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="exitBtn" destination="65T-Xn-olu" id="1Xb-lW-a0C"/>
+                        <outlet property="lottie" destination="Fjk-qF-Me1" id="AN4-k0-RYN"/>
                         <outlet property="newTaskBTN" destination="jp3-Fg-ekc" id="9HO-Bo-E0A"/>
                         <outlet property="table" destination="oxW-aw-8mm" id="NvJ-4x-X0E"/>
                     </connections>
@@ -386,7 +398,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="1PV-be-Xli">
-                                <rect key="frame" x="35" y="356" width="132" height="34"/>
+                                <rect key="frame" x="35" y="356" width="132" height="34.333333333333314"/>
                                 <locale key="locale" localeIdentifier="en_IL"/>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJZ-Xb-1aI">
