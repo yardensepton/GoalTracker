@@ -1,3 +1,10 @@
+//
+//  DataManager.swift
+//  GoalTracker-iOS
+//
+//  Created by Student25 on 17/08/24
+//
+
 import Foundation
 import Firebase
 import FirebaseDatabase

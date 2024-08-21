@@ -1,3 +1,10 @@
+//
+//  CheckboxButton.swift
+//  GoalTracker-iOS
+//
+//  Created by Student5 on 14/08/24
+//
+
 import UIKit
 
 protocol CheckboxButtonDelegate: AnyObject {

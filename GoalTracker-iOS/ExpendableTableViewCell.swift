@@ -1,3 +1,10 @@
+//
+//  ExpandableTableViewCell.swift
+//  GoalTracker-iOS
+//
+//  Created by Student25 on 14/08/24
+//
+
 import UIKit
 
 protocol ExpandableTableViewCellDelegate: AnyObject {
