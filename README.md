@@ -1,9 +1,12 @@
-# Goal Tracker
+# Goal Tracker :heavy_check_mark:	
 
 ## About
-Goal Tracker is a simple iOS application that helps users manage and track their tasks. It connects to a Firebase database to read tasks specific to each user and offers functionalities to add, complete, and delete tasks.
+Goal Tracker is an iOS application that helps users manage and track their tasks.
+It features Firebase authentication for secure user login and connects to a Firebase database to read tasks specific to each user.
+The app offers functionalities to add, complete, and delete tasks, making it easier for users to stay organized and on track.
 
 ## Features
+- **Firebase authentication**: Secure user login.
 - **Task Management**: Add, complete, and delete tasks.
 - **Firebase Integration**: Syncs tasks with Firebase, ensuring that data is consistently up-to-date across sessions.
 - **Expandable Task View**: Allows users to view detailed task information with an expandable/collapsible cell interface.
